@@ -3,26 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <title>Login</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f0f;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.box{
+background:#1c1c1c;
+padding:40px;
+border-radius:15px;
+width:300px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+width:100%;
+padding:10px;
+background:white;
+border:none;
+cursor:pointer;
+}
+</style>
+
 </head>
 
-<body style="margin:0;font-family:Arial;background:#111;color:white;display:flex;justify-content:center;align-items:center;height:100vh;">
+<body>
 
-<div style="background:#1c1c1c;padding:40px;border-radius:15px;width:300px;text-align:center;">
-
+<div class="box">
 <h2>Login</h2>
 
-<input placeholder="Email" style="width:100%;padding:10px;margin:10px 0;">
-<input placeholder="Password" type="password" style="width:100%;padding:10px;margin:10px 0;">
+<input id="email" placeholder="Email">
+<input id="pass" type="password" placeholder="Password">
 
-<button style="width:100%;padding:10px;background:white;border:none;cursor:pointer;">
-Login
-</button>
-
-<br><br>
-
-<a href="signup.html" style="color:#aaa;">Create account</a>
-
+<button onclick="login()">Login</button>
 </div>
+
+<script>
+function login(){
+alert("Logged in (demo)");
+window.location.href = "dashboard.html";
+}
+</script>
 
 </body>
 </html>
